@@ -1,0 +1,108 @@
+{
+    "For_Loop": {
+        "prefix": "for",
+        "body": [
+          "For ${1:var_name} = ${2:start_expr} To ${3:end_expr}",
+          "\t$0",
+          "Next"
+        ],
+        "description": "For Loop"
+    },
+    "For_Loop_Step": {
+      "prefix": "for",
+      "body": [
+        "For ${1:var_name} = ${2:start_expr} To ${3:end_expr} Step ${4:inc_expr}",
+        "\t$0",
+        "Next"
+      ],
+      "description": "For Loop with Step"
+  },
+  "While_loop": {
+    "prefix": "while",
+    "body": [
+      "While ${1:var_name}",
+      "\t$0",
+      "Wend"
+    ],
+    "description": "While Loop"
+},
+"if_then": {
+  "prefix": "if",
+  "body": [
+    "If ${1:condition} Then",
+    "\t$0",
+    "End If"
+  ],
+  "description": "If Then"
+},
+"if_then_else": {
+  "prefix": "if",
+  "body": [
+    "If ${1:condition} Then",
+    "\t$0",
+    "Else",
+    "\t",
+    "End If"
+  ],
+  "description": "If Then Else"
+},
+"if_then_elseif": {
+  "prefix": "if",
+  "body": [
+    "If ${1:condition} Then",
+    "\t$0",
+    "ElseIf ${2:elseif_condition} Then",
+    "\t",
+    "Else",
+    "\t",
+    "End If"
+  ],
+  "description": "If Then ElseIf"
+},
+"Do_loop": {
+  "prefix": "do",
+  "body": [
+    "Do",
+    "\t$0",
+    "Loop ${1|Until,While|} ${2:condition}"
+  ],
+  "description": "Do Loop"
+},
+"do_case": {
+  "prefix": "do",
+  "body": [
+    "Do Case ${1:do_condition}",
+    "Case ${2:case_expr}",
+    "\t$0",
+    "Case Else",
+    "\t",
+    "End Case"
+  ],
+  "description": "Do Case statement"
+},
+"Dim_one": {
+  "prefix": "Dim",
+  "body": [
+    "Dim ${1:var_name} As ${2|SmallInt,Integer,LargeInt,IntPtr,Float,String,Logical,Date,DateTime,Time,Object,Alias,Pen,Brush,Font,Symbol,This,RefPtr|}"
+  ],
+  "description": "Dim a variable"
+},
+"Global_Variable": {
+  "prefix": "Global",
+  "body": [
+    "Global ${1:var_name} As ${2|SmallInt,Integer,LargeInt,IntPtr,Float,String,Logical,Date,DateTime,Time,Object,Alias,Pen,Brush,Font,Symbol,This,RefPtr|}"
+  ],
+  "description": "Dim a Global variable"
+},
+"Select_Statement": {
+  "prefix": "Select",
+  "body": [
+    "select ${1:col1} \"${2:col1_alias}\",${3:col2_alias} \"${4:col2_alias}\" ",
+      "\tFrom ${5:table1} as \"${6:table1_alias}\"",
+      "\tWhere ${6:where_clause}",
+      "\tGroup By ${7:col_expr}",
+      "\tOrder By ${8:col_expr} "
+  ],
+  "description": "select statement"
+}
+}

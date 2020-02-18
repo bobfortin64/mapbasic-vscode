@@ -1,0 +1,36 @@
+{
+    "name": "mapbasic",
+    "displayName": "MapBasic",
+    "description": "MapInfo MapBasic Language",
+    "publisher": "mapinfo",
+    "version": "0.0.9",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mapbasic",
+            "aliases": ["MapBasic", "mapbasic"],
+            "extensions": [".mb",".def",".mbp"],
+            "configuration": "./language-configuration.json",
+            "filenames": [
+                "tasks.json"
+            ]
+        }],
+        "grammars": [{
+            "language": "mapbasic",
+            "scopeName": "source.mapbasic",
+            "path": "./syntaxes/mapbasic.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "mapbasic",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
