@@ -359,3 +359,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+LanguageExtension/mapbasic/MapBasicHelper.runtimeconfig.dev.json
+LanguageExtension/mapbasic/MapBasicHelper.deps.json
