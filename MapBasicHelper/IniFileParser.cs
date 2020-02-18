@@ -1,18 +1,4 @@
-﻿/*****************************************************************************
-*       Copyright © 2014, Pitney Bowes Software Inc.
-*       All rights reserved.
-*       Confidential Property of Pitney Bowes Software Inc.
-*
-* $Author: pa021sh $
-* $Revision: 80849 $
-* $Date: 2014-04-28 17:28:32 -0400 (Mon, 28 Apr 2014) $
-*
-* Module Description:
-*
-* $HeadURL: http://dbysvnmsprod/svn/mimb.svn/sandbox/Ellis2gbDp/Assems/MapInfo.MapBasicPreCompiler/Utilities/IniFileParser.cs $
-*****************************************************************************/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
