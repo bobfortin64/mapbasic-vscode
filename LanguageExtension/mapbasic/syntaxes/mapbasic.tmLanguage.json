@@ -3336,6 +3336,14 @@
 					"name":  "storage.type.function.mapbasic"
 				},
 				{
+					"match": "(?i)(\\s*|^|\\(|\\b)(Atan)(\\s*|$|\\)|\\(|\\b)",
+					"name":  "storage.type.function.mapbasic"
+				},
+				{
+					"match": "(?i)(\\s*|^|\\(|\\b)(Atan2)(\\s*|$|\\)|\\(|\\b)",
+					"name":  "storage.type.function.mapbasic"
+				},
+				{
 					"match": "(?i)(\\s*|^|\\(|\\b)(Atn)(\\s*|$|\\)|\\(|\\b)",
 					"name":  "storage.type.function.mapbasic"
 				},

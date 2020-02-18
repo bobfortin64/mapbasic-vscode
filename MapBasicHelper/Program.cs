@@ -23,6 +23,12 @@ namespace BuildMapBasicProject
 		// If no project file then we just compile the mb files in the passed in folder
 		static int Main(string[] args)
 		{
+            // Validate arguments and show usage message
+            if (args.Length == 0 || args.Length > 2)
+            {                
+                Console.WriteLine($"Usage: MapBasicHelper.exe [PathToMapBasic.exe] FolderToBuild");
+                return 1;
+            }
 			var compiler = new CompileMb();
 			compiler.FindMapBasic();
 
