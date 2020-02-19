@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MapBasicHelper": {
+      "commandName": "Project",
+      "commandLineArgs": "run \"C:\\Users\\ro011fo\\Documents\\MapBasicScripts\\Hello\""
+    }
+  }
+}

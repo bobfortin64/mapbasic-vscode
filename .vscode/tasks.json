@@ -7,29 +7,11 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MapBasicHelper.csproj",
+                "${workspaceFolder}/MapBasicHelper/MapBasicHelper.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "build Release",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/MapBasicHelper.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary",
-                "-c",
-                "Release"
-            ],
-            "problemMatcher": "$msCompile",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
         },
         {
             "label": "publish",
@@ -37,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/MapBasicHelper.csproj",
+                "${workspaceFolder}/MapBasicHelper/MapBasicHelper.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -50,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/MapBasicHelper.csproj",
+                "${workspaceFolder}/MapBasicHelper/MapBasicHelper.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

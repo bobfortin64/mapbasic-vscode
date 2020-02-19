@@ -4,8 +4,43 @@
         {
             "label": "build",
             "type": "process",
-            "command": "${env:USERPROFILE}/.vscode/extensions/mapinfo.mapbasic-0.0.9/MapBasicHelper.exe",
-            "args":["${workspaceFolder}"],
+            "command": "${env:USERPROFILE}/.vscode/extensions/mapinfo.mapbasic-0.0.9/Helper/MapBasicHelper.exe",
+            "args":[
+                "build",
+                "${workspaceFolder}"
+            ],
+            "presentation": {
+                "showReuseMessage": false,
+                "reveal": "silent",
+                "panel": "shared"
+            },            
+            "problemMatcher": {
+                "owner": "mapbasic",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": {
+                    "regexp": "^\\((.*):(\\d+)\\)\\s*(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "message": 3
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run",
+            "type": "process",
+            "command": "${env:USERPROFILE}/.vscode/extensions/mapinfo.mapbasic-0.0.9/Helper/MapBasicHelper.exe",
+            "args":[
+                "run",
+                "MapInfo.Application.x64",
+                "${workspaceFolder}"
+            ],
             "presentation": {
                 "showReuseMessage": false,
                 "reveal": "silent",
